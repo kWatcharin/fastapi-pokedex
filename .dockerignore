@@ -1,0 +1,55 @@
+# Python cache files
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.venv/
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Log files
+*.log
+
+# Test coverage
+.coverage
+htmlcov/
+
+# Build directories
+build/
+dist/
+
+# Dependency directories
+node_modules/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Configuration files with sensitive information
+config.ini
+secrets.yaml
+
+# Temporary files
+*.tmp
+*.bak
+
+# Documentation
+docs/
+
+# Git directory
+.git/
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose.yml
+
+# Python packaging
+*.egg-info/
