@@ -47,13 +47,13 @@ async def main(request: Request) -> dict:
                 "method": "POST"
             }
        
-    
-    
-# CMD with uvicorn ASGI
+          
+### CMD with uvicorn ASGI
 
-# Production
-# uvicorn main:app --host 0.0.0.0 --port 9090 --workers 4;
-# fastapi run --host 0.0.0.0 --port 9090 --workers 4;
+### Development
+### fastapi dev
 
-# Develop
-# fastapi dev
+### Production
+### uvicorn main:app --host 0.0.0.0 --port 9090 --workers 4;
+### fastapi run --host 0.0.0.0 --port 9090 --workers 4;
+
