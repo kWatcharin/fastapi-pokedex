@@ -4,6 +4,7 @@ WORKDIR /api
 
 RUN apt-get update
 RUN apt-get -y install build-essential curl
+RUN apt-get -y nano 
 RUN apt-get -y upgrade
 
 
