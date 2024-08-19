@@ -2,10 +2,10 @@ FROM python:3.12.2
 
 WORKDIR /api
 
-RUN apt-get update
-RUN apt-get -y install build-essential curl
-RUN apt-get -y install nano 
-RUN apt-get -y upgrade
+RUN apt-get update && \
+        apt-get -y install build-essential curl && \
+        apt-get -y install nano && \
+        apt-get -y upgrade
 
 
 ENV VIRTUAL_ENV=/opt/venv \
