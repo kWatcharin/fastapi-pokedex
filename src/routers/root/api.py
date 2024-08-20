@@ -1,4 +1,4 @@
 from fastapi import (APIRouter, status)
 
 
-router = APIRouter(prefix="/", tags=["Root"])
+root = APIRouter(prefix="/root", tags=["Root"])

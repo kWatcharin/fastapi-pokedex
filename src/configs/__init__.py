@@ -5,7 +5,16 @@ from fastapi.middleware.cors import CORSMiddleware
 from middlewares.timout import TimeoutMiddleware
 
 
-app = FastAPI(title="FastAPI-Pokedex")
+app = FastAPI(
+    title="FastAPI-Pokedex", 
+    version="0.0.1",
+    servers=[
+        {
+            "url": "https://localhost:<port>", 
+            "description": "Dev environment"
+        }
+    ]
+)
 app.mount(path="/fastapi-pokedex", app=app)
 
 ############################## Middlewares ##############################
