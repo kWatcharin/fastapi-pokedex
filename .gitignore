@@ -147,7 +147,7 @@ celerybeat.pid
 # .env
 # *.env
 # .env.*
-# .venv
+.venv
 # env/
 venv/*
 venv/Script/

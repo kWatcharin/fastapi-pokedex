@@ -10,11 +10,10 @@ class TimeoutMiddleware(BaseHTTPMiddleware):
         try:
             return await asyncio.wait_for(call_next(request), timeout=1.00)
         
-        except asyncio.TimeoutError:
-            status_code = status.HTTP_408_REQUEST_TIMEOUT
-            
-            content = jsonable_encoder({
-                "detail": "Request timeout"
-            })
-            
-            return JSONResponse(content=content, status_code=status_code)
+        except asyncio.TimeoutError:            
+            return JSONResponse(
+                content=jsonable_encoder({
+                    "detail": "Request timeout"
+                }), 
+                status_code=status.HTTP_408_REQUEST_TIMEOUT
+            )
